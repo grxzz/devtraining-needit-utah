@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <additional_groupby>due_date,work_notes,priority,sla_due</additional_groupby>
         <aggregate>COUNT</aggregate>
         <aggregation_source>no_override</aggregation_source>
@@ -20,7 +20,7 @@
         <chart_subtitle_color/>
         <chart_subtitle_size>14</chart_subtitle_size>
         <chart_subtitle_style>normal</chart_subtitle_style>
-        <chart_title>Request Type- Needit</chart_title>
+        <chart_title/>
         <chart_title_color display_value="Darkorange">65b30254a9fe3dba00b44ce0710382b3</chart_title_color>
         <chart_title_size>20</chart_title_size>
         <chart_title_style>normal</chart_title_style>
@@ -28,7 +28,7 @@
         <chart_title_y_position>0</chart_title_y_position>
         <chart_width>600</chart_width>
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
-        <color_palette display_value="Sequential - Violets light to dark (11)">c42aeae049642302c570de2434267c62</color_palette>
+        <color_palette display_value="Blues light to dark (7)">e236b1cdd7500200b96d45a3ce610360</color_palette>
         <colors/>
         <column/>
         <compute_percent>aggregate</compute_percent>
@@ -46,8 +46,8 @@
         <donut_width_percent>42</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>u_requested_for</field>
-        <field_list>u_requested_for,u_when_needed,number,priority,state,assigned_to,short_description,sys_class_name</field_list>
+        <field>u_request_type</field>
+        <field_list>u_requested_for,u_when_needed,due_date,number,priority,state,assigned_to,short_description,sys_class_name</field_list>
         <filter/>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
@@ -55,7 +55,7 @@
         <gauge_autoscale>true</gauge_autoscale>
         <group/>
         <import_table/>
-        <interval>month</interval>
+        <interval>year</interval>
         <is_published>false</is_published>
         <is_real_time>false</is_real_time>
         <is_scheduled>false</is_scheduled>
@@ -78,8 +78,8 @@
         <others>true</others>
         <page_hdrftr/>
         <pivot_expanded>true</pivot_expanded>
-        <report_drilldown display_value="System Administrator: 2026-01-19 15:34:20">691fed6593e63a102c58b97a7bba107d</report_drilldown>
-        <report_source/>
+        <report_drilldown/>
+        <report_source display_value="Active NeedIt Requests (NeedIt)">737b0d6193e23a102c58b97a7bba1094</report_source>
         <roles/>
         <row/>
         <sc_groupby_item_id/>
@@ -100,29 +100,29 @@
         <show_legend_border>false</show_legend_border>
         <show_marker>false</show_marker>
         <show_zero>false</show_zero>
-        <source_type>table</source_type>
+        <source_type>source</source_type>
         <start_time/>
         <style_config/>
         <sumfield/>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-01-14 06:41:56</sys_created_on>
-        <sys_id>fe679cff935232102c58b97a7bba1042</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>Monthly Active Requests by Requested for</sys_name>
+        <sys_created_on>2026-01-19 21:03:05</sys_created_on>
+        <sys_id>f17cc1e193e23a102c58b97a7bba1035</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Active NeedIt Requests by Type</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
-        <sys_update_name>sys_report_fe679cff935232102c58b97a7bba1042</sys_update_name>
+        <sys_update_name>sys_report_f17cc1e193e23a102c58b97a7bba1035</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-19 23:38:59</sys_updated_on>
+        <sys_updated_on>2026-01-19 21:07:18</sys_updated_on>
         <table>x_58872_needit_needit</table>
-        <title>Monthly Active Requests by Requested for</title>
+        <title>Active NeedIt Requests by Type</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>middle</title_vertical_alignment>
         <to/>
-        <trend_field>u_when_needed</trend_field>
-        <type>line_bar</type>
+        <trend_field/>
+        <type>donut</type>
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>
         <use_null_in_trend>false</use_null_in_trend>
